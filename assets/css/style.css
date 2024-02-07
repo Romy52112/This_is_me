@@ -1,0 +1,26 @@
+img{
+    width: 100px;
+    height:auto;
+}
+h1{
+    font-size: 50px;
+    color: aliceblue;
+    margin-left: 20px;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+    background-color: #167ad8;
+    color: #0e0d0d;
+  }
+header nav li{
+    display: inline-block;
+    font-family: sans-serif;
+    font-size: 20px;
+    padding: 30px;
+}
+.contact{
+    color: aqua;
+}
