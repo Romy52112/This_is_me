@@ -1,18 +1,37 @@
-img{
-    width: 100px;
-    height:auto;
+:root{
+    --background-color:#167ad8;
 }
+body{
+    background-color: #ffffff;
+    
+}
+img{
+    width: 150px;
+    height:150px;
+    
+}
+/* header */
 h1{
     font-size: 50px;
     color: aliceblue;
-    margin-left: 20px;
+    margin-right:auto
+}
+main h2{
+        background-color: rgb(223, 223, 223);
+        border-radius: 5px;
+        text-align: center;
+        margin-left: 0;
+        margin-right: 0;
+       
+}
+main p{
+    text-align: center;
+
 }
 header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 1%;
-    background-color: #167ad8;
+    background-color: var(--background-color);
     color: #0e0d0d;
   }
 header nav li{
@@ -21,6 +40,62 @@ header nav li{
     font-size: 20px;
     padding: 30px;
 }
-.contact{
-    color: aqua;
+    /* about me section */
+section p{
+    display:block;
+    background-color: #e4e4e4;
+    border-radius: 5px;
+    height: 60px;
+
 }
+/* work */
+figure img{
+    width: 250px;
+    margin: 0 .5%;
+    font-size: 200%;
+    color: #13293d;
+    background-color: #fff;
+    border: 3px solid #13293d;
+    display: flex;
+}
+figure img:hover {
+    background-color: #06f060;
+    color: #fff;
+    transform:scale(1.1)
+  }
+figure p{
+    text-align: right;
+    margin-right: 75px;
+    margin-bottom: 50px;
+   
+}
+div{
+    background-color:#e4e4e4 ;
+    display:flex;
+ 
+}
+.Work2{
+    border: 2px solid #0e0d0d;
+    display:flex;
+}
+/* contact section */
+section li{
+    display: inline-block;
+    text-align: center;
+}
+.phone{
+    
+
+}
+
+
+   
+/* footer */
+footer {
+    display: flex;
+    align-items: center;
+    background-color: #167ad8;
+    color: #0e0d0d;
+    padding:10px;
+    justify-content: center;
+  }
