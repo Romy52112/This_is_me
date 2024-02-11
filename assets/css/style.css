@@ -3,30 +3,20 @@
 }
 body{
     background-color: #ffffff;
+    margin: 0;
     
 }
-img{
-    width: 150px;
-    height:150px;
-    
-}
-/* header */
+
+/* This is for the header part of the website */
 h1{
     font-size: 50px;
     color: aliceblue;
     margin-right:auto
 }
-main h2{
-        background-color: rgb(223, 223, 223);
-        border-radius: 5px;
-        text-align: center;
-        margin-left: 0;
-        margin-right: 0;
-       
-}
-main p{
-    text-align: center;
-
+header img{
+    width: 100px;
+    height:100px;
+    
 }
 header {
     display: flex;
@@ -36,19 +26,27 @@ header {
   }
 header nav li{
     display: inline-block;
-    font-family: sans-serif;
     font-size: 20px;
-    padding: 30px;
+    padding: 10px;
 }
-    /* about me section */
-section p{
-    display:block;
-    background-color: #e4e4e4;
-    border-radius: 5px;
-    height: 60px;
+/* for the main part or the body of the website */
+main{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
 
+main h2{
+        background-color: rgb(223, 223, 223);
+        border-radius: 5px;     
 }
-/* work */
+
+    /* For the "about me" section */
+section p{
+    background-color: #e4e4e4;
+   
+}
+
+/*This is for the work section using hover and display elements*/
 figure img{
     width: 250px;
     margin: 0 .5%;
@@ -58,15 +56,17 @@ figure img{
     border: 3px solid #13293d;
     display: flex;
 }
+figure{
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+}
 figure img:hover {
-    background-color: #06f060;
     color: #fff;
     transform:scale(1.1)
   }
 figure p{
-    text-align: right;
-    margin-right: 75px;
-    margin-bottom: 50px;
+    text-align: center;
+    display: flex;
    
 }
 div{
@@ -78,19 +78,38 @@ div{
     border: 2px solid #0e0d0d;
     display:flex;
 }
-/* contact section */
-section li{
-    display: inline-block;
+.horiseon {
+    border-style: solid;
+    border-width: 1px;
+    padding: 10px;
+    float: right;
+    width: 25%;
+    box-sizing: border-box;
+    display: block;
     text-align: center;
+  }
+/* This is for the contact section using pseudo elements and display */
+section  li{
+    display: block;
+    text-align: center;
+   
 }
-.phone{
-    
+ul{
+    padding-inline: 0;
+}
+.phone::before{
+    content:"\260E";
+    padding-right: 5px;
 
 }
+.email::before{
+    content:"\2709";
+    padding-right: 5px;
 
+}
 
    
-/* footer */
+/* Css for my footer using pseudo elements */
 footer {
     display: flex;
     align-items: center;
@@ -99,3 +118,19 @@ footer {
     padding:10px;
     justify-content: center;
   }
+.footer::before{
+    content:"\00A9";
+    padding-right: 5px;  
+}
+
+@media screen and (max-width: 600px) {
+    header{
+        background-color: aqua;
+    }
+    body{
+        background-color: antiquewhite;
+    }
+    footer{
+        background-color: aqua;
+    }
+}
