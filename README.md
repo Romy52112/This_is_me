@@ -1,6 +1,6 @@
 Description:
     This website is my portfolio, that includes about me, my work and my contact info. 
-My deployed portfolio:
+My deployed portfolio: https://github.com/Romy52112/This_is_me.git
 
 The following are the websites I used for my portfolio
     for my photo editor:
@@ -16,5 +16,7 @@ The following are the websites I used for my portfolio
         https://romy52112.github.io/html_website/
 
 Screenshot of my portfolio:
+![alt text](image.png)
+
     
 
